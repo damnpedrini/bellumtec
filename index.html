@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>BELLUMTAC</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/app.js" defer></script>
+</head>
+<body>
+<nav><a class="logo" href="#">BELLUM<span>TAC</span></a><a class="nb" href="#oferta">Comprar</a></nav>
+
+<header class="hero dark">
+<h1>BELLUMTAC</h1>
+<p>Camisas 100% algodão para quem leva o dia a sério.</p>
+<a class="cta" href="#oferta">Quero a minha</a>
+<span class="fine">Oferta de lançamento por tempo limitado</span>
+<div class="mark" aria-hidden="true">BELLUMTAC</div>
+</header>
+
+<section>
+<div class="w">
+<h2>Feita para o dia inteiro.</h2>
+<p class="lead">Conforto de algodão, estampa que aguenta lavagem e um caimento que não precisa de ajuste.</p>
+<div class="cols">
+<div><h3>100% algodão</h3><p>Macia, respirável e sem aquele calor de tecido sintético.</p></div>
+<div><h3>Estampa durável</h3><p>Impressão nítida nas costas que mantém a cor lavagem após lavagem.</p></div>
+<div><h3>Caimento reto</h3><p>Modelagem limpa que veste bem sozinha ou por baixo de outra peça.</p></div>
+</div>
+</div>
+</section>
+
+<section class="models" id="modelos">
+<div class="w">
+<div class="models-head">
+<div><h2>Escolha seu modelo.</h2><p class="lead">Modelos disponíveis para montar seu kit.</p></div>
+<a class="models-cta" href="#oferta">Montar meu kit</a>
+</div>
+<div class="product-grid" id="products"></div>
+</div>
+</section>
+
+<section class="dark">
+<div class="w">
+<h2>Quem usa, volta.</h2>
+<p class="lead">O que os clientes dizem depois da primeira lavagem.</p>
+<!-- Troque estes depoimentos pelos feedbacks reais dos seus clientes antes de divulgar. -->
+<div class="fb">
+<div class="q"><p>Tecido pesado e macio. A estampa não saiu em nenhuma lavagem.</p><div><b>Rafael M.</b><small>Curitiba, PR</small></div></div>
+<div class="q"><p>Chegou rápido e o caimento é exatamente o que eu queria. Já pedi o kit de 3.</p><div><b>Lucas A.</b><small>São Paulo, SP</small></div></div>
+<div class="q"><p>Uso no trabalho e na rua. Não esquenta e não deforma.</p><div><b>Bruno S.</b><small>Joinville, SC</small></div></div>
+</div>
+</div>
+</section>
+
+<section class="offer" id="oferta">
+<div class="box">
+<h2>Oferta de lançamento.</h2>
+<p class="lead offer-copy">Quanto mais camisas, menos você paga em cada uma.</p>
+<div class="tm" id="tm" aria-label="Tempo restante da oferta"></div>
+<div class="kits" id="kits"></div>
+<div class="item-options" id="items"></div>
+<button class="buy" id="buy">Comprar agora</button>
+<p class="note">Pix com 5% de desconto. Frete grátis acima de R$ 199.</p>
+</div>
+</section>
+
+<footer><span>BELLUMTAC 2026</span><span>Envio para todo o Brasil</span></footer>
+
+<div class="ov" id="ov"></div>
+<aside class="dr" id="dr" aria-label="Finalizar compra">
+<div class="dh"><h4 id="dt">Seu pedido</h4><button class="x" id="cl">Fechar</button></div>
+<div id="vC" class="checkout-content">
+<form id="form" class="f checkout-form">
+<div class="db">
+<div class="sm" id="sm"></div>
+<label for="nome">Nome completo</label><input id="nome" required autocomplete="name">
+<div class="two"><div><label for="tel">WhatsApp</label><input id="tel" required inputmode="tel" autocomplete="tel" placeholder="(41) 90000-0000"></div><div><label for="cep">CEP</label><input id="cep" required inputmode="numeric" autocomplete="postal-code"></div></div>
+<label for="end">Endereço e número</label><input id="end" required autocomplete="street-address">
+<div class="two"><div><label for="bai">Bairro</label><input id="bai" required></div><div><label for="cid">Cidade e estado</label><input id="cid" required></div></div>
+<label>Pagamento</label>
+<div class="pay"><label><input type="radio" name="pg" value="Pix" checked> Pix, 5% de desconto</label><label><input type="radio" name="pg" value="Cartão"> Cartão em até 3x sem juros</label></div>
+</div>
+<div class="df" id="ckf"></div>
+</form>
+</div>
+<div id="vD" class="confirmation">
+<div class="ok"><h4>Pedido pronto.</h4><p id="num"></p><p>Envie o pedido pelo WhatsApp para confirmar o pagamento e combinar a entrega.</p></div>
+<a class="btn" id="wa" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>
+<button class="btn o" id="back">Fechar</button>
+</div>
+</aside>
+</body>
+</html>
